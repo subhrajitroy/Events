@@ -3,13 +3,14 @@ package com.canvas.rolling.controllers;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 @RestController
 public class HealthCheckController {
 
     private static final String OK = "OK";
 
     @GetMapping("/health")
-    public String ping(){
+    public String ping() {
         return OK;
     }
 }
